@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catatan Sederhana</title>
+  <title>Diary of Star - Astronaut's Log</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href=style.css>
+  </head>
 <body>
+  <!-- Background Stars -->
+  <div id="starfield"></div>
+
   <div class="container mt-5">
-    <h2 class="text-center mb-4">📒 Aplikasi Catatan Sederhana</h2>
+    <h2 class="text-center mb-4">🚀 Diary of Star - Astronaut's Log</h2>
 
-    <div class="mb-3">
-      <input type="text" id="noteInput" class="form-control" placeholder="Tulis catatan...">
+    <div class="mb-4">
+      <input type="text" id="noteInput" class="form-control" placeholder="Tulis log harianmu di sini...">
     </div>
-    <div class="mb-3">
-      <button class="btn btn-primary" onclick="addNote()">Tambah Catatan</button>
-      <button class="btn btn-secondary" onclick="clearForm()">Bersihkan</button>
+    <div class="mb-4">
+      <button class="btn btn-primary" onclick="addNote()">
+        <i class="fas fa-rocket me-2"></i>Tambah Entri
+      </button>
+      <button class="btn btn-secondary" onclick="clearForm()">
+        <i class="fas fa-sync me-2"></i>Bersihkan
+      </button>
     </div>
 
-    <ul id="noteList" class="list-group"></ul>
+    <div id="noteList" class="row"></div>
   </div>
 
   <script src="java.js"></script>

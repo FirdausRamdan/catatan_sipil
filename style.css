@@ -1,6 +1,81 @@
 body {
-  background-color: #f8f9fa;
+  background: linear-gradient(45deg, #0b0c21, #1a1b38);
+  color: #e0e0e0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
-li span {
-  margin-right: 10px;
+
+.container {
+  padding: 2rem;
+  background: rgba(12, 13, 32, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(65, 105, 225, 0.2);
+  margin-top: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  border-bottom: 2px solid #4169e1;
+  padding-bottom: 1rem;
+}
+
+.note-card {
+  background: rgba(16, 17, 41, 0.8);
+  border: 1px solid #4169e1;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  color: #7cf8ff;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#noteInput {
+  background: rgba(25, 26, 55, 0.8);
+  border: 1px solid #4169e1;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #4169e1, #7cf8ff);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: linear-gradient(45deg, #4b0082, #9400d3);
+  border: none;
+}
+
+.star-decoration {
+  position: fixed;
+  background: white;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
 }
